@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(31, 31, 31, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #daf3f9;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.input-section {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #61dafb;
+    color: #121212;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+.product-list ul {
+    list-style-type: none;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.product-list li {
+    background-color: #2e2e2e;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.product-list li:hover {
+    transform: translateX(10px);
+    background-color: #61dafb1d;
+}
+
+/* Satın Alma Fiyatı */
+.purchase-price {
+    color: #f1c40f; /* Sarı - Satın Alma Fiyatı */
+}
+
+/* Güncel Fiyat */
+.current-price {
+    color: #fa9127; /* Yeşil - Güncel Fiyat */
+}
+
+/* Kar/Zarar */
+.profit-loss {
+    font-weight: bold;
+}
+
+.profit-loss.positive {
+    color: #1abc9c; /* Açık Yeşil - Kar */
+}
+
+.profit-loss.negative {
+    color: #e74c3c; /* Kırmızı - Zarar */
+}
+
+/* Toplam Fiyatlar */
+.total-info {
+    margin-top: 30px;
+}
+
+.total-info h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+.total-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Satın Alma Fiyatı */
+#total-purchase {
+    color: #f1c40f; /* Sarı - Satın Alma Fiyatı */
+}
+
+/* Güncel Fiyat */
+#total-current {
+    color: #fa9127; /* Yeşil - Güncel Fiyat */
+}
+
+/* Kar/Zarar */
+#total-profit-loss {
+    color: #1abc9c; /* Açık Yeşil - Kar */
+}
+
+#total-profit-loss.negative {
+    color: #e74c3c; /* Kırmızı - Zarar */
+}
+
+
+/* İşlem Çubuğu */
+.progress-container {
+    margin-bottom: 10px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #444;
+}
+
+progress::-webkit-progress-value {
+    background-color: #61dafb;
+}
+
+#progress-text {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #61dafb;
+}
+
+footer {
+    text-align: center;
+    color: #bbb;
+    font-size: 14px;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
