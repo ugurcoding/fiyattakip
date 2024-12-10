@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { getPrice } = require('./scrape.js');
+const { getPrice } = require('https://ugurcoding.github.io/fiyattakip/scrape.js');
 const app = express();
 
 // Ana dizini statik dosyalar için sunuyoruz
